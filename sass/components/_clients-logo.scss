@@ -1,27 +1,27 @@
-.clients-logo {
+// .clients-logo {
 
-    &__link {
-            display: flex;
-            width: 170px;
-            height: 92px;
-            justify-content: center;
-            align-items: center;
-            margin-right: auto;
-            margin-left: auto;
-            border: 1px solid var(--background-color-icon);
-            border-radius: 4px;
-            fill: var(--background-color-icon);
-            cursor: pointer;
-            transition-property: fill, border-color;
-            transition-duration: 250ms, 250ms;
-            transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+//     &__link {
+//             display: flex;
+//             width: 170px;
+//             height: 92px;
+//             justify-content: center;
+//             align-items: center;
+//             margin-right: auto;
+//             margin-left: auto;
+//             border: 1px solid var(--background-color-icon);
+//             border-radius: 4px;
+//             fill: var(--background-color-icon);
+//             cursor: pointer;
+//             transition-property: fill, border-color;
+//             transition-duration: 250ms, 250ms;
+//             transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
     
-            &:hover,
-            &:focus {
-                fill: var(--accent-text-color);
-                border-color: var(--accent-text-color);
-            }
-        }
-}
+//             &:hover,
+//             &:focus {
+//                 fill: var(--accent-text-color);
+//                 border-color: var(--accent-text-color);
+//             }
+//         }
+// }
 
 

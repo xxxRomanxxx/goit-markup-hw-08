@@ -5,6 +5,19 @@
     display: flex;
     align-items: center;
 
+    &__menu {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+
+        background-color: #fff;
+        border: none;
+
+        @media (min-width: 480px) {
+            display: none;
+        }
+    }
+
     &__logo {
             margin-right: 93px;
     
@@ -19,9 +32,10 @@
     &__lable {
             color: var(--accent-text-color);
         }
-    
+
     &__link {
-            display: block;
+            display: none;
+            // display: block;
     
             color: var(--title-text-r);
             font-weight: 500;
@@ -63,6 +77,10 @@
 
             &--current {
                 color: var(--accent-text-color);
+            }
+
+            @media (min-width: 480px) {
+                display: block;
             }
         }
 
