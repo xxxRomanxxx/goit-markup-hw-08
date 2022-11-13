@@ -1,0 +1,30 @@
+/*
+Колір заголовку #212121 
+основний колір тексту #757575
+білий колір #FFFFFF
+синій колір #2196F3
+колір футера адреса і телефона rgba(255, 255, 255, 0.6) 
+колір фону 1 секції #2F303A
+$ 
+*/
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196f3;
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --footer-adress-color: rgba(255, 255, 255, 0.6);
+    --background-color-primary: #ffffff;
+    --background-color-secondary: #f5f4fa;
+    --background-color-accent: #2f303a;
+    --border-color-heder: #ececec;
+    --border-color-portfolio: #eeeeee;
+    --hero-background-gradient: rgba(47, 48, 58, 0.4);
+    --background-color-icon: #afb1bb;
+    --background-footer-color-icon: rgba(255, 255, 255, 0.1);
+    --background-color-work: rgba(47, 48, 58, 0.8);
+    --background-color-example: rgba(33, 150, 243, 0.9);
+    --background-color-modal: rgba(0, 0, 0, 0.2);
+    --border-color-modal-button: rgba(0, 0, 0, 0.1);
+    --transition-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}

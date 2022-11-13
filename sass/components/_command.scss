@@ -1,0 +1,26 @@
+.command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-color-secondary);
+
+    &__title {
+            margin-bottom: 50px;
+    
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+        }
+
+    &__list {
+            display: flex;
+            padding-left: 0;
+            text-align: center;
+            list-style: none;
+            gap: 30px;
+        }
+}
+
+
+
+

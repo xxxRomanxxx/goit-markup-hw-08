@@ -1,0 +1,42 @@
+.modal-checkbox {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+
+    &__span {
+    
+            color: var(--primary-text-color);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+    &__link {
+            color: var(--accent-text-color);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+    &__svg {
+            margin-right: 7px;
+    
+            fill: var(--accent-text-color);
+            border: 2px solid var(--title-text-color);
+            border-radius: 2px;
+            transition-property: background-color, border-color;
+            transition-duration: 250ms, 250ms;
+            transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+    
+            .modal-checkbox__input:checked~& {
+                background-color: var(--accent-text-color);
+                border-color: var(--accent-text-color);
+            }
+    }
+}
+
+
+
+
+

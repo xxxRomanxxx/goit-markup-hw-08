@@ -1,0 +1,39 @@
+/* auth nav */
+.auth-nav {
+    display: flex;
+    padding-left: 0;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+
+    &__link {
+            display: flex;
+            align-items: center;
+            fill: var(--primary-text-color);
+            color: var(--primary-text-color);
+    
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            transition-property: color, fill;
+            transition-duration: 250ms, 250ms;
+            transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+                fill: var(--accent-text-color);
+            }
+        }
+        
+        &__icon {
+            margin-right: 10px;
+        }
+}
+
+
+
+

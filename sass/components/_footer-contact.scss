@@ -1,0 +1,53 @@
+.footer-contact {
+
+    &__list {
+            list-style: none;
+        }
+
+    &__item {
+            margin-right: 70px;
+    
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+
+    &__link {
+            color: var(--footer-adress-color);
+            text-decoration: none;
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+        }
+
+    &__text {
+            color: var(--white-text-color);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+        }
+}
+
+
+
+
+
+
+
+

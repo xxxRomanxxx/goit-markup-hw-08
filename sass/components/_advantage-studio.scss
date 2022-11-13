@@ -1,0 +1,25 @@
+.advantage-studio {
+    padding: 94px 0px;
+
+    background-color: var(--background-color-primary);
+
+        &__title {
+            margin-bottom: 50px;
+    
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+        }
+
+        &__list {
+            display: flex;
+            min-width: 270px;
+            padding-left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            list-style: none;
+            gap: 30px;
+        }
+}
+
