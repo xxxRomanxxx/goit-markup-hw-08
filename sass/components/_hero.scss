@@ -1,13 +1,28 @@
 .hero {
     padding: 200px 0;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(var(--hero-background-gradient),
             var(--hero-background-gradient)),
-        url(../imeges/hero.jpg);
+        url(../imeges/hero-mobile.jpg);
     background-color: var(--background-color-accent);
+    
+    @media (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient(var(--hero-background-gradient),
+            var(--hero-background-gradient)),
+        url(../imeges/hero-tablet.jpg);
+    }
+
+    @media (min-width: 1200px) {
+            max-width: 1600px;
+            height: 600px;
+            background-image: linear-gradient(var(--hero-background-gradient),
+                    var(--hero-background-gradient)),
+                url(../imeges/hero.jpg);
+        }
 
     &__title {
             margin-left: auto;
@@ -17,17 +32,22 @@
     
             color: var(--white-text-color);
             font-weight: 900;
-            // font-size: 44px;
-            // line-height: 1.36;
+            // 
             font-size: 26px;
+            line-height: 1.61;
             letter-spacing: 0.06em;
             text-transform: uppercase;
             text-align: center;
+
+            @media (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
         }
+    }
 
     &__button {
             display: flex;
-            padding: 10px 32px;
+            padding: 10px 24px;
             margin: 0 auto;
             justify-content: center;
             border-radius: 4px;
@@ -51,6 +71,10 @@
                 color: var(--title-text-color);
                 background-color: var(--background-color-secondary);
                 border-color: transparent;
+            }
+
+            @media (min-width: 1200px) {
+                padding: 10px 32px;
             }
         }
 }

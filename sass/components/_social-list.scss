@@ -1,32 +1,32 @@
-// .social-list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 10px;
-//     padding-bottom: 30px;
-//     list-style: none;
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    list-style: none;
 
-//     &__link {
-//             display: flex;
-//             width: 44px;
-//             height: 44px;
-//             justify-content: center;
-//             align-items: center;
-//             border-radius: 50%;
-//             fill: var(--background-color-icon);
-//             background-color: var(--white-text-color);
-//             transition-property: fill, background-color;
-//             transition-duration: 250ms, 250ms;
-//             transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+    &__link {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            fill: var(--background-color-icon);
+            background-color: var(--white-text-color);
+            transition-property: fill, background-color;
+            transition-duration: 250ms, 250ms;
+            transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
     
-//             &:hover,
-//             &:focus {
-//                 fill: var(--white-text-color);
-//                 background-color: var(--accent-text-color);
+            &:hover,
+            &:focus {
+                fill: var(--white-text-color);
+                background-color: var(--accent-text-color);
     
-//             }
-//         }
-// }
+            }
+        }
+}
 
 
 
