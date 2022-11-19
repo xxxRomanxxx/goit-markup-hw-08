@@ -1,12 +1,25 @@
-// .footer {
-//     padding: 60px 0;
+.footer {
+    padding: 60px 0;
 
-//     background-color: var(--background-color-accent);
-//     color: var(--white-text-color);
+    background-color: var(--background-color-accent);
+    color: var(--white-text-color);
 
-//     &__container {
-//             display: flex;
-//             align-items: baseline;
-//         }
-// }
+    &__container {
+            @media (min-width:1200px) {
+                display: flex;
+                align-items: baseline;
+            }
+         }
+
+    &__tablet {
+        @media (min-width:768px) and (max-width:1199px) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media (min-width:1200px) {
+            display: flex;
+        }
+    }
+}
 

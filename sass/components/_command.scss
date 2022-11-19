@@ -3,6 +3,12 @@
     padding-bottom: 94px;
     background-color: var(--background-color-secondary);
 
+    &_img {
+        @media (min-width:768px) {
+                max-width: 354px;
+            }
+    }
+
     &__title {
             margin-bottom: 50px;
     
@@ -13,11 +19,19 @@
         }
 
     &__list {
-            display: flex;
             padding-left: 0;
             text-align: center;
             list-style: none;
-            gap: 30px;
+
+            @media (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            @media (min-width:1200px) {
+                flex-wrap: nowrap;
+            }
         }
 }
 

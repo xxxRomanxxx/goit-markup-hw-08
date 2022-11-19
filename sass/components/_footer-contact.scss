@@ -1,48 +1,58 @@
-// .footer-contact {
+.footer-contact {
+    @media (min-width:760px) and (max-width:1199px) {
+        display: inline-flex;
+        flex-direction: column;
+    }
 
-//     &__list {
-//             list-style: none;
-//         }
+    &__list {
+            list-style: none;
+        }
 
-//     &__item {
-//             margin-right: 70px;
+    &__item {
+                margin-bottom: 8px;
+
+                @media (min-width:1200px) {
+                        margin-right: 70px;
+                    }
+        }
+
+    &__link {
+            display: block;
+            color: var(--footer-adress-color);
+            text-align: center;
+            text-decoration: none;
+            font-family: Roboto, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+
+            @media (min-width:1200px) {
+                    text-align: left;
+                }
     
-//             &:not(:last-child) {
-//                 margin-bottom: 9px;
-//             }
-//         }
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+        }
 
-//     &__link {
-//             color: var(--footer-adress-color);
-//             text-decoration: none;
-//             font-family: Roboto, sans-serif;
-//             font-style: normal;
-//             font-weight: 400;
-//             font-size: 14px;
-//             line-height: 1.71;
-//             letter-spacing: 0.03em;
-//             transition-property: color;
-//             transition-duration: 250ms;
-//             transition-timing-function: var(--transition-cubic-bezier);
+    &__text {
+            color: var(--white-text-color);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
     
-//             &:hover,
-//             &:focus {
-//                 color: var(--accent-text-color);
-//             }
-//         }
-
-//     &__text {
-//             color: var(--white-text-color);
-//             transition-property: color;
-//             transition-duration: 250ms;
-//             transition-timing-function: var(--transition-cubic-bezier);
-    
-//             &:hover,
-//             &:focus {
-//                 color: var(--accent-text-color);
-//             }
-//         }
-// }
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+        }
+}
 
 
 

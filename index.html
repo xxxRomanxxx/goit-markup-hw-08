@@ -159,7 +159,24 @@
           <h2 class="command__title">Наша команда</h2>
           <ul class="command__list">
             <li class="employee-card">
-              <img class="employee-card__img" src="./imeges/1comandos.jpg" alt="чоловік" />
+              <picture class="employee-card__img">
+                <source
+                  srcset="./imeges/1comandos-mobile.jpg 1x, ./imeges/1comandos-mobile@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./imeges/1comandos-tablet.jpg 1x, ./imeges/1comandos-tablet@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./imeges/1comandos.jpg 1x, ./imeges/1comandos@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="min-width: 1200px"
+                />
+                <img src="./imeges/1comandos-mobile.jpg" alt="чоловік" />
+              </picture>
               <h3 class="employee-card__title">Ігор Дем'яненко</h3>
               <p lang="en" class="employee-card__text">Product Designer</p>
               <ul class="social-list">
@@ -194,7 +211,24 @@
               </ul>
             </li>
             <li class="employee-card">
-              <img class="employee-card__img" src="./imeges/2comandos.jpg" alt="жінка" />
+              <picture class="employee-card__img">
+                <source
+                  srcset="./imeges/2comandos-mobile.jpg 1x, ./imeges/2comandos-mobile@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./imeges/2comandos-tablet.jpg 1x, ./imeges/2comandos-tablet@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./imeges/2comandos.jpg 1x, ./imeges/2comandos@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="min-width: 1200px"
+                />
+                <img src="./imeges/2comandos-mobile.jpg" alt="жінка" />
+              </picture>
               <h3 class="employee-card__title">Ольга Рєпіна</h3>
               <p lang="en" class="employee-card__text">Frontend Developer</p>
               <ul class="social-list">
@@ -229,7 +263,24 @@
               </ul>
             </li>
             <li class="employee-card">
-              <img class="employee-card__img" src="./imeges/3comandos.jpg" alt="чоловік" />
+              <picture class="employee-card__img">
+                <source
+                  srcset="./imeges/3comandos-mobile.jpg 1x, ./imeges/3comandos-mobile@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./imeges/3comandos-tablet.jpg 1x, ./imeges/3comandos-tablet@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./imeges/3comandos.jpg 1x, ./imeges/3comandos@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="min-width: 1200px"
+                />
+                <img src="./imeges/3comandos-mobile.jpg" alt="чоловік" />
+              </picture>
               <h3 class="employee-card__title">Микола Тарасов</h3>
               <p lang="en" class="employee-card__text">Marketing</p>
               <ul class="social-list">
@@ -264,7 +315,24 @@
               </ul>
             </li>
             <li class="employee-card">
-              <img class="employee-card__img" src="./imeges/4comandos.jpg" alt="чоловік" />
+              <picture class="employee-card__img">
+                <source
+                  srcset="./imeges/4comandos-mobile.jpg 1x, ./imeges/4comandos-mobile@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./imeges/4comandos-tablet.jpg 1x, ./imeges/4comandos-tablet@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./imeges/4comandos.jpg 1x, ./imeges/4comandos@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="min-width: 1200px"
+                />
+                <img src="./imeges/4comandos-mobile.jpg" alt="чоловік" />
+              </picture>
               <h3 class="employee-card__title">Михайло Єрмаков</h3>
               <p lang="en" class="employee-card__text">UI Designer</p>
               <ul class="social-list">
@@ -354,62 +422,64 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <div class="footer-contact">
-            <a href="./index.html" class="footer-logo"
-              ><span class="footer-logo__lable">Web</span>Studio</a
-            >
-            <ul class="footer-contact__list">
-              <li class="footer-contact__item">
-                <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="footer-contact__link"
-                  ><p class="footer-contact__text">м. Київ, пр-т Лесі Українки, 26</p></a
-                >
-              </li>
-              <li class="footer-contact__item">
-                <a href="mailto:info@devstudio.com" class="footer-contact__link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="footer-contact__item">
-                <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <p class="footer-social__text">Приєднуйтесь</p>
-            <ul class="footer-social__list">
-              <li>
-                <a href="#" class="footer-social__link">
-                  <svg width="20" height="20">
-                    <use href="./imeges/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-social__link">
-                  <svg width="20" height="20">
-                    <use href="./imeges/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-social__link">
-                  <svg width="20" height="20">
-                    <use href="./imeges/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-social__link">
-                  <svg width="20" height="20">
-                    <use href="./imeges/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="footer__tablet">
+            <div class="footer-contact">
+              <a href="./index.html" class="footer-logo"
+                ><span class="footer-logo__lable">Web</span>Studio</a
+              >
+              <ul class="footer-contact__list">
+                <li class="footer-contact__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="footer-contact__link"
+                    ><p class="footer-contact__text">м. Київ, пр-т Лесі Українки, 26</p></a
+                  >
+                </li>
+                <li class="footer-contact__item">
+                  <a href="mailto:info@devstudio.com" class="footer-contact__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-contact__item">
+                  <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <p class="footer-social__text">Приєднуйтесь</p>
+              <ul class="footer-social__list">
+                <li>
+                  <a href="#" class="footer-social__link">
+                    <svg width="20" height="20">
+                      <use href="./imeges/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-social__link">
+                    <svg width="20" height="20">
+                      <use href="./imeges/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-social__link">
+                    <svg width="20" height="20">
+                      <use href="./imeges/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-social__link">
+                    <svg width="20" height="20">
+                      <use href="./imeges/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="mailing">
             <form class="mailing__form">
