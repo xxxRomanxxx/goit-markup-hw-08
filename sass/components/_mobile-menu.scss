@@ -30,6 +30,17 @@
         background-color: var(--white-text-color);
     }
 
+    &__svg {
+        transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+
+            &:hover,
+            &:focus {
+                fill: var(--accent-text-color);
+            }
+    }
+
     &__item {
         list-style: none;
 
@@ -46,10 +57,84 @@
         letter-spacing: 0.02em;
         color: var(--title-text-color);
         text-decoration: none;
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
 
 
         &--current {
                 color: var(--accent-text-color);
             }
+    }
+    
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__auth {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+    
+
+    &__number {
+
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02;
+
+        &--current {
+                color: var(--accent-text-color);
+            }
+    }
+
+    &__email {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02;
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: var(--transition-cubic-bezier);
+        
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+    }
+
+    &__social {
+        display: flex;
+        margin-top: 64px;
+        gap: 20px;
+        
+    }
+
+    &__social-item {
+        list-style: none;
+    }
+
+    &__social-item:not(:last-child)::after {
+        content: "";
+        display: inline-flex;
+        vertical-align: top;
+        width: 1px;
+        height: 22px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+
+    &__social-link {
+        text-decoration: none;
+        color: var(--accent-text-color);
     }
 }
