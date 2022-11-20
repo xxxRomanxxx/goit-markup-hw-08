@@ -2,32 +2,33 @@
 
 
 .site-nav {
-    position: relative;
     display: flex;
     align-items: center;
 
     &__menu {
         position: absolute;
         top: 0px;
-        left: 418px;
+        right: 8px;
 
         background-color: #fff;
         border: none;
 
-        @media (max-width:480px), (min-width: 768px) {
+        @media (min-width: 768px) {
             display: none;
         }
     }
 
     &__logo {
-            margin-right: 93px;
-    
             color: var(--black-text-color);
             font-family: Raleway, sans-serif;
             font-weight: 700;
             font-size: 26px;
             line-height: 1.2;
             text-decoration: none;
+
+            @media (min-width:768px) {
+                margin-right: 93px;
+            }
         }
 
     &__lable {

@@ -29,7 +29,7 @@
             <a href="./index.html" class="site-nav__logo">
               <span class="site-nav__lable">Web</span>Studio
             </a>
-            <button class="site-nav__menu" type="button">
+            <button class="site-nav__menu js-open-menu" type="button">
               <svg width="40" height="40" class="site-nav__icon">
                 <use href="./imeges/icons.svg#icon-mob_menu"></use>
               </svg>
@@ -503,6 +503,50 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close js-close-menu" type="button">
+        <svg width="18.67" height="18.67">
+          <use href="./imeges/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__contact">
+        <ul class="mobile-menu__auth">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__number">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
         <button class="modal__closebutton" type="button" data-modal-close>
@@ -566,6 +610,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

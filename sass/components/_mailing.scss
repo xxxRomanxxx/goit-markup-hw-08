@@ -29,13 +29,17 @@
             margin-left: auto;
             margin-bottom: 20px;
             
-            width: 448px;
+            width: 100%;
             height: 50px;
     
             color: var(--white-text-color);
             background-color: var(--background-color-accent);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
+
+            @media (min-width: 768px) {
+                width: 448px;
+            }
 
             @media (min-width:1200px) {
                 display: inline-block;
@@ -46,7 +50,7 @@
         }
 
     &__button {
-            display: block;
+            display: flex;
             margin-right: auto;
             margin-left: auto;
             align-items: center;
@@ -71,7 +75,7 @@
             transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier), var(--transition-cubic-bezier);
     
             @media (min-width:1200px) {
-            display: inline-block;
+            display: inline-flex;
             }
 
             &:hover {

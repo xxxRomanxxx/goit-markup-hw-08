@@ -15,6 +15,12 @@
         display: flex;
     }
 
+    &__item:not(:last-child) {
+        @media (min-width: 768px) and (max-width: 1200px) {
+                margin-bottom: 10px;
+            }
+    }
+
     &__link {
             display: block;
             align-items: center;
@@ -34,10 +40,6 @@
             &:focus {
                 color: var(--accent-text-color);
                 fill: var(--accent-text-color);
-            }
-
-            @media (min-width: 768px) and (max-width: 1200px) {
-                margin-bottom: 10px;
             }
         }                       
         

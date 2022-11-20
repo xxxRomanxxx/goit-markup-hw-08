@@ -10,7 +10,7 @@
 
         &__img {
             display: flex;
-            width: 450px;
+            width: 100%;
             height: 120px;
             margin-bottom: 30px;
             align-items: center;
@@ -47,7 +47,11 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 1.71;
+            
+
+        &__text:not(:last-child) {
             margin-bottom: 30px;
+        }
         }
 }
 
