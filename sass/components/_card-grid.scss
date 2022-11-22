@@ -6,7 +6,17 @@
     list-style: none;
 
     &__item {
-            width: 370px;
+            width: 450px;
+
+            @media (min-width: 768px) {
+                width: 354px;
+            }
+
+             @media (min-width: 1200px) {
+                width: 370px;
+            }
+
+
         }
 }
 

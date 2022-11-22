@@ -1,10 +1,17 @@
 .button-grid {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     padding-left: 0;
-    justify-content: center;
+    // justify-content: center;
+    justify-content: start;
     list-style: none;
     gap: 8px;
+
+    @media (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 
     &__button {
             display: inline-block;
