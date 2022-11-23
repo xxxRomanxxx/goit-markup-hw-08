@@ -1186,7 +1186,11 @@ img {
 
 .mobile-menu {
   position: fixed;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1200,11 +1204,16 @@ img {
   height: 100%;
   background-color: var(--white-text-color);
   padding: 48px 40px;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-duration: 250ms, 250ms;
+          transition-duration: 250ms, 250ms;
+  -webkit-transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
+          transition-timing-function: var(--transition-cubic-bezier), var(--transition-cubic-bezier);
 }
 .mobile-menu.is-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 .mobile-menu__nav {
   display: -webkit-inline-box;
