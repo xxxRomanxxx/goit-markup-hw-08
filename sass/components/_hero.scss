@@ -1,4 +1,5 @@
 .hero {
+    max-width: 1600px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -21,7 +22,6 @@
     
     
     @media (min-width: 768px) {
-        max-width: 768px;
         background-image: linear-gradient(var(--hero-background-gradient),
             var(--hero-background-gradient)),
         url(../imeges/hero-tablet.jpg);
@@ -40,7 +40,6 @@
     @media (min-width: 1200px) {
             padding: 200px 0;
             
-            max-width: 1600px;
             height: 600px;
             background-image: linear-gradient(var(--hero-background-gradient),
                     var(--hero-background-gradient)),

@@ -1,5 +1,9 @@
 .example {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media (min-width: 1200px) {
+            padding: 94px 0px;
+        }
 
     &__title {
             margin-bottom: 50px;

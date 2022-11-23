@@ -1,6 +1,10 @@
 .advantage-studio {
-    padding: 94px 0px;
+    padding: 60px 0px;
     background-color: var(--background-color-primary);
+
+    @media (min-width: 1200px) {
+        padding: 94px 0px;
+    }
 
         &__title {
             margin-bottom: 50px;
